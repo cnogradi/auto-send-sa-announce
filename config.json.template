@@ -1,0 +1,10 @@
+{
+  "sender": "email@gmail.com",
+  "recipient": "1112345678@vtext.com",
+  "token": "my gmail token",
+  "server": "smtp.gmail.com",
+  "announcement": "My Announcement",
+  "sermonsRegex" : "(Midweek|Sunday) Service|Sun Afternoon|Bible Study",
+  "churchKey" : "mychurchkey"
+ }
+
