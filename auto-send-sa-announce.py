@@ -17,10 +17,14 @@ except:
 	exit('Configuration file config.json not found!')
 # Loading JSON format
 config=json.load(config_file)
-# Open file sermons.json 
-sermon_file=open('sermons.json')
-# Defining sermons 
-sermons=json.load(sermon_file)
+# Open file sermons.json
+sermons=[]
+try:
+	sermon_file=open('sermons.json')
+	# Defining sermons 
+	sermons=json.load(sermon_file)
+except:
+	pass
 # Print message to user
 print('Fetching sermon page from SermonAudio ...')
 # Get html page from Sermon Audio server 
