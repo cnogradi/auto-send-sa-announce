@@ -6,7 +6,11 @@ pipeline {
             entries: [
                 URLTriggerEntry( 
                     url: 'https://www.sermonaudio.com/search.asp?SourceOnly=true&currSection=sermonssource&keyword=${churchKey}&mediatype=MP4',
-                    checkLastModificationDate: true
+                    checkLastModificationDate: true,
+                    checkETag: true,
+                    contentTypes: [
+                        MD5Sum()
+                    ]
                 )
 
             ])
