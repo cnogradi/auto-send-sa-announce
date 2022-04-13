@@ -7,7 +7,7 @@ import re
 # Import the json library
 import json 
 # Import the smtplib library
-import smtplib
+import smtpdfdflib
 # Import EmailMessage class from email.message 
 from email.message import EmailMessage
 # Open the configuration file
